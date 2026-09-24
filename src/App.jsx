@@ -1,4 +1,5 @@
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import { Routes, Route } from "react-router-dom";
 
 function App() {
@@ -10,11 +11,7 @@ function App() {
           path="/"
           element={
             <div className="min-h-screen bg-[#0B0B0B] p-10 text-[#F5F1E8]">
-              <h1 className="font-['Bebas_Neue'] text-6xl">BLACK & BLADE</h1>
-
-              <p className="mt-4 text-gray-400">
-                Precision Cuts. Modern Style.
-              </p>
+              <h1 className="font-['Bebas_Neue'] text-5xl">HOME</h1>
             </div>
           }
         />
@@ -52,6 +49,7 @@ function App() {
           }
         />
       </Routes>
+       <Footer />
     </>
   );
 }

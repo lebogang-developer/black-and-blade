@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { FiMenu, FiX, FiCalendar } from "react-icons/fi";
 
+
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -27,7 +28,7 @@ const Navbar = () => {
           aria-label="Black & Blade Home"
         >
           <img
-            src="/images/logo/black-blade-logo.png"
+            src="/images/logo/black-and-blade-logo.png"
             alt="Black & Blade"
             className="h-12 w-auto object-contain sm:h-14"
           />
