@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Signature Haircut",
+    "description": "A precision haircut tailored to your style, finished with attention to every detail.",
+    "price": 180,
+    "duration": 45,
+    "category": "Hair"
+  },
+  {
+    "id": 2,
+    "name": "Skin Fade",
+    "description": "A sharp, detailed fade with clean transitions and a refined finish.",
+    "price": 220,
+    "duration": 60,
+    "category": "Hair"
+  },
+  {
+    "id": 3,
+    "name": "Beard Trim",
+    "description": "Professional beard shaping, trimming and finishing for a clean, defined look.",
+    "price": 120,
+    "duration": 30,
+    "category": "Beard"
+  },
+  {
+    "id": 4,
+    "name": "Haircut + Beard",
+    "description": "Combine a precision haircut with a professionally shaped beard.",
+    "price": 280,
+    "duration": 75,
+    "category": "Package"
+  },
+  {
+    "id": 5,
+    "name": "Kids Cut",
+    "description": "A clean, comfortable haircut designed for children under 12.",
+    "price": 140,
+    "duration": 40,
+    "category": "Kids"
+  },
+  {
+    "id": 6,
+    "name": "The Black & Blade",
+    "description": "Our signature grooming experience including haircut, beard trim and premium finish.",
+    "price": 350,
+    "duration": 90,
+    "category": "Package"
+  }
+]

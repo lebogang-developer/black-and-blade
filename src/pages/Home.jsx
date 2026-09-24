@@ -8,6 +8,8 @@ import {
   FiUserCheck,
 } from "react-icons/fi";
 
+import services from "../data/services.json";
+
 const Home = () => {
   return (
     <main>
@@ -219,6 +221,104 @@ const Home = () => {
                 Discover Our Story
               </span>
 
+              <FiArrowRight
+                size={18}
+                className="text-[#B89B5E] transition-transform duration-300 group-hover:translate-x-1"
+              />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Services Preview */}
+      <section className="bg-[#0B0B0B] py-20 text-[#F5F1E8] sm:py-24 lg:py-32">
+        <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+          {/* Section Header */}
+          <div className="flex flex-col justify-between gap-8 md:flex-row md:items-end">
+            <div>
+              <div className="mb-6 flex items-center gap-3">
+                <span className="h-px w-10 bg-[#B89B5E]" />
+
+                <span className="text-xs font-semibold uppercase tracking-[0.3em] text-[#B89B5E]">
+                  Our Services
+                </span>
+              </div>
+
+              <h2 className="max-w-2xl font-['Bebas_Neue'] text-5xl leading-none tracking-wide sm:text-6xl lg:text-7xl">
+                BUILT AROUND
+                <span className="block text-[#B89B5E]">YOUR STYLE.</span>
+              </h2>
+            </div>
+
+            <p className="max-w-md text-sm leading-7 text-white/50 sm:text-base">
+              From precision cuts to complete grooming experiences, every
+              service is designed to leave you looking sharp and feeling
+              confident.
+            </p>
+          </div>
+
+          {/* Services Grid */}
+          <div className="mt-14 grid gap-px overflow-hidden border border-white/10 bg-white/10 sm:grid-cols-2 lg:grid-cols-3">
+            {services.map((service, index) => (
+              <div
+                key={service.id}
+                className={`group relative bg-[#111111] p-7 transition-all duration-300 hover:bg-[#171717] sm:p-8 ${
+                  index === 5 ? "lg:bg-[#171717]" : ""
+                }`}
+              >
+                {/* Number */}
+                <div className="flex items-start justify-between">
+                  <span className="text-xs font-semibold tracking-[0.2em] text-[#B89B5E]">
+                    {String(index + 1).padStart(2, "0")}
+                  </span>
+
+                  <FiScissors
+                    size={20}
+                    className="text-white/20 transition-colors duration-300 group-hover:text-[#B89B5E]"
+                  />
+                </div>
+
+                {/* Service Name */}
+                <h3 className="mt-12 font-['Bebas_Neue'] text-3xl tracking-wide text-[#F5F1E8]">
+                  {service.name}
+                </h3>
+
+                {/* Description */}
+                <p className="mt-4 min-h-[72px] text-sm leading-6 text-white/50">
+                  {service.description}
+                </p>
+
+                {/* Price + Duration */}
+                <div className="mt-7 flex items-end justify-between border-t border-white/10 pt-5">
+                  <div>
+                    <span className="text-xs uppercase tracking-wider text-white/30">
+                      From
+                    </span>
+
+                    <p className="mt-1 text-xl font-semibold text-[#B89B5E]">
+                      R{service.price}
+                    </p>
+                  </div>
+
+                  <span className="text-xs text-white/40">
+                    {service.duration} min
+                  </span>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Bottom CTA */}
+          <div className="mt-10 flex flex-col items-start justify-between gap-5 sm:flex-row sm:items-center">
+            <p className="text-sm text-white/40">
+              Prices include professional finishing and grooming products.
+            </p>
+
+            <Link
+              to="/services"
+              className="group inline-flex items-center gap-3 border-b border-[#B89B5E] pb-1 text-sm font-semibold uppercase tracking-wider text-[#F5F1E8] transition-colors duration-300 hover:text-[#B89B5E]"
+            >
+              View All Services
               <FiArrowRight
                 size={18}
                 className="text-[#B89B5E] transition-transform duration-300 group-hover:translate-x-1"
