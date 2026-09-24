@@ -15,6 +15,7 @@ import {
 
 import services from "../data/services.json";
 import barbers from "../data/barbers.json";
+import testimonials from "../data/testimonials.json";
 
 const Home = () => {
   return (
@@ -542,6 +543,99 @@ const Home = () => {
               <FiCalendar size={18} />
               Book An Appointment
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ==================== TESTIMONIALS ==================== */}
+      <section className="bg-[#0b0b0b] px-6 py-20 md:px-10 lg:px-16 lg:py-28">
+        <div className="mx-auto max-w-7xl">
+          {/* Section Header */}
+          <div className="mx-auto max-w-3xl text-center">
+            <span className="text-sm font-semibold uppercase tracking-[0.3em] text-[#b89b5e]">
+              Client Reviews
+            </span>
+
+            <h2 className="mt-4 font-['Bebas_Neue'] text-4xl uppercase leading-tight tracking-wide text-[#f5f1e8] sm:text-5xl md:text-6xl">
+              DON'T JUST TAKE
+              <span className="block text-[#b89b5e]">OUR WORD FOR IT.</span>
+            </h2>
+
+            <p className="mt-6 text-base leading-7 text-[#777777] md:text-lg">
+              Great grooming is about how you look and how you feel when you
+              leave the chair. Here's what our clients have to say about the
+              Black & Blade experience.
+            </p>
+          </div>
+
+          {/* Testimonials */}
+          <div className="mt-14 grid gap-6 md:grid-cols-3">
+            {testimonials.map((testimonial) => (
+              <article
+                key={testimonial.id}
+                className="group border border-[#292929] bg-[#141414] p-7 transition-all duration-300 hover:-translate-y-1 hover:border-[#b89b5e]/60 md:p-8"
+              >
+                {/* Quote Icon */}
+                <div className="flex items-center justify-between">
+                  <span className="font-serif text-5xl leading-none text-[#b89b5e]">
+                    “
+                  </span>
+
+                  {/* Rating */}
+                  <div className="flex gap-1">
+                    {Array.from({ length: testimonial.rating }).map(
+                      (_, index) => (
+                        <FiStar
+                          key={index}
+                          size={16}
+                          className="fill-[#b89b5e] text-[#b89b5e]"
+                        />
+                      ),
+                    )}
+                  </div>
+                </div>
+
+                {/* Review */}
+                <p className="mt-6 min-h-[150px] text-sm leading-7 text-[#b8b8b8]">
+                  {testimonial.review}
+                </p>
+
+                {/* Client */}
+                <div className="mt-7 flex items-center gap-4 border-t border-[#292929] pt-6">
+                  {/* Initial */}
+                  <div className="flex h-11 w-11 shrink-0 items-center justify-center bg-[#b89b5e] font-['Bebas_Neue'] text-lg text-[#0b0b0b]">
+                    {testimonial.name.charAt(0)}
+                  </div>
+
+                  <div>
+                    <h3 className="font-semibold text-[#f5f1e8]">
+                      {testimonial.name}
+                    </h3>
+
+                    <p className="mt-1 text-xs uppercase tracking-wider text-[#777777]">
+                      {testimonial.location}
+                    </p>
+                  </div>
+                </div>
+              </article>
+            ))}
+          </div>
+
+          {/* Review Highlight */}
+          <div className="mt-14 flex flex-col items-center justify-center gap-4 border-t border-[#292929] pt-8 text-center sm:flex-row">
+            <div className="flex items-center gap-2">
+              <FiStar size={18} className="fill-[#b89b5e] text-[#b89b5e]" />
+
+              <span className="font-['Bebas_Neue'] text-2xl tracking-wide text-[#f5f1e8]">
+                5.0
+              </span>
+            </div>
+
+            <span className="hidden text-[#444444] sm:block">/</span>
+
+            <p className="text-sm text-[#777777]">
+              Trusted by clients across Bloemfontein & Mangaung
+            </p>
           </div>
         </div>
       </section>

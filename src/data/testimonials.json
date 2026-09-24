@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Daniel Mokoena",
+    "location": "Bloemfontein",
+    "rating": 5,
+    "review": "The attention to detail is incredible. I showed Marcus a reference photo and he understood exactly what I wanted. Easily one of the cleanest cuts I've had."
+  },
+  {
+    "id": 2,
+    "name": "Jason Williams",
+    "location": "Bloemfontein",
+    "rating": 5,
+    "review": "Black & Blade has completely changed my grooming routine. The atmosphere is great, the service is professional and the haircut is always on point."
+  },
+  {
+    "id": 3,
+    "name": "Kabelo Radebe",
+    "location": "Mangaung",
+    "rating": 5,
+    "review": "I booked online, arrived on time and everything was seamless. The barber took his time and delivered exactly the style I wanted. Definitely coming back."
+  }
+]
