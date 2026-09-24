@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+
 import {
   FiArrowRight,
   FiCalendar,
@@ -6,6 +7,10 @@ import {
   FiScissors,
   FiAward,
   FiUserCheck,
+  FiCheck,
+  FiClock,
+  FiStar,
+  FiHeart,
 } from "react-icons/fi";
 
 import services from "../data/services.json";
@@ -324,6 +329,112 @@ const Home = () => {
                 className="text-[#B89B5E] transition-transform duration-300 group-hover:translate-x-1"
               />
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ==================== WHY CHOOSE US ==================== */}
+      <section className="bg-[#141414] px-6 py-20 md:px-10 lg:px-16 lg:py-28">
+        <div className="mx-auto max-w-7xl">
+          {/* Section Header */}
+          <div className="mx-auto max-w-3xl text-center">
+            <span className="text-sm font-semibold uppercase tracking-[0.3em] text-[#b89b5e]">
+              Why Black & Blade
+            </span>
+
+            <h2 className="mt-4 font-['Bebas_Neue'] text-4xl uppercase leading-tight tracking-wide text-[#f5f1e8] sm:text-5xl md:text-6xl">
+              WHERE CRAFT MEETS
+              <span className="block text-[#b89b5e]">CONFIDENCE.</span>
+            </h2>
+
+            <p className="mt-6 text-base leading-7 text-[#777777] md:text-lg">
+              We believe a great haircut is more than just a service. It is
+              about precision, confidence and an experience worth coming back
+              for.
+            </p>
+          </div>
+
+          {/* Why Us Cards */}
+          <div className="mt-14 grid gap-px overflow-hidden border border-[#2a2a2a] bg-[#2a2a2a] sm:grid-cols-2 lg:grid-cols-4">
+            {/* Card 1 */}
+            <div className="group bg-[#141414] p-8 transition-colors duration-300 hover:bg-[#1b1b1b] md:p-10">
+              <div className="flex h-14 w-14 items-center justify-center border border-[#b89b5e]/40 text-[#b89b5e] transition-all duration-300 group-hover:border-[#b89b5e] group-hover:bg-[#b89b5e] group-hover:text-[#0b0b0b]">
+                <FiScissors size={24} />
+              </div>
+
+              <h3 className="mt-7 font-['Bebas_Neue'] text-2xl tracking-wide text-[#f5f1e8]">
+                PRECISION CRAFT
+              </h3>
+
+              <p className="mt-4 text-sm leading-6 text-[#777777]">
+                Every cut is carefully executed with attention to detail, clean
+                finishes and sharp, consistent results.
+              </p>
+            </div>
+
+            {/* Card 2 */}
+            <div className="group bg-[#141414] p-8 transition-colors duration-300 hover:bg-[#1b1b1b] md:p-10">
+              <div className="flex h-14 w-14 items-center justify-center border border-[#b89b5e]/40 text-[#b89b5e] transition-all duration-300 group-hover:border-[#b89b5e] group-hover:bg-[#b89b5e] group-hover:text-[#0b0b0b]">
+                <FiAward size={24} />
+              </div>
+
+              <h3 className="mt-7 font-['Bebas_Neue'] text-2xl tracking-wide text-[#f5f1e8]">
+                EXPERIENCED BARBERS
+              </h3>
+
+              <p className="mt-4 text-sm leading-6 text-[#777777]">
+                Our barbers combine technical skill with modern styling
+                knowledge to create looks that suit you.
+              </p>
+            </div>
+
+            {/* Card 3 */}
+            <div className="group bg-[#141414] p-8 transition-colors duration-300 hover:bg-[#1b1b1b] md:p-10">
+              <div className="flex h-14 w-14 items-center justify-center border border-[#b89b5e]/40 text-[#b89b5e] transition-all duration-300 group-hover:border-[#b89b5e] group-hover:bg-[#b89b5e] group-hover:text-[#0b0b0b]">
+                <FiStar size={24} />
+              </div>
+
+              <h3 className="mt-7 font-['Bebas_Neue'] text-2xl tracking-wide text-[#f5f1e8]">
+                PREMIUM EXPERIENCE
+              </h3>
+
+              <p className="mt-4 text-sm leading-6 text-[#777777]">
+                From the moment you walk in, expect a clean, comfortable and
+                professional grooming experience.
+              </p>
+            </div>
+
+            {/* Card 4 */}
+            <div className="group bg-[#141414] p-8 transition-colors duration-300 hover:bg-[#1b1b1b] md:p-10">
+              <div className="flex h-14 w-14 items-center justify-center border border-[#b89b5e]/40 text-[#b89b5e] transition-all duration-300 group-hover:border-[#b89b5e] group-hover:bg-[#b89b5e] group-hover:text-[#0b0b0b]">
+                <FiHeart size={24} />
+              </div>
+
+              <h3 className="mt-7 font-['Bebas_Neue'] text-2xl tracking-wide text-[#f5f1e8]">
+                YOUR STYLE, OUR EXPERTISE
+              </h3>
+
+              <p className="mt-4 text-sm leading-6 text-[#777777]">
+                Whether you know exactly what you want or need some direction,
+                we work with you to achieve the right look.
+              </p>
+            </div>
+          </div>
+
+          {/* Bottom Highlight */}
+          <div className="mt-12 flex flex-col items-center justify-between gap-6 border-t border-[#2a2a2a] pt-8 text-center sm:flex-row sm:text-left">
+            <div className="flex items-center gap-3">
+              <FiCheck className="text-[#b89b5e]" size={20} />
+
+              <span className="text-sm text-[#f5f1e8]">
+                Professional grooming. Personal attention. Every visit.
+              </span>
+            </div>
+
+            <div className="flex items-center gap-3 text-sm text-[#777777]">
+              <FiClock className="text-[#b89b5e]" size={18} />
+              <span>Appointments available throughout the week</span>
+            </div>
           </div>
         </div>
       </section>
