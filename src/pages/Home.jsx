@@ -639,6 +639,79 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      {/* ==================== BOOKING CTA ==================== */}
+      <section className="relative overflow-hidden bg-[#b89b5e] px-6 py-20 md:px-10 lg:px-16 lg:py-24">
+        {/* Decorative Background */}
+        <div className="pointer-events-none absolute -right-24 -top-24 h-72 w-72 rounded-full border-[40px] border-[#0b0b0b]/5" />
+        <div className="pointer-events-none absolute -bottom-32 -left-20 h-80 w-80 rounded-full border-[50px] border-[#0b0b0b]/5" />
+
+        <div className="relative mx-auto max-w-7xl">
+          <div className="flex flex-col items-center justify-between gap-10 text-center lg:flex-row lg:text-left">
+            {/* CTA Content */}
+            <div className="max-w-3xl">
+              <span className="text-sm font-bold uppercase tracking-[0.3em] text-[#0b0b0b]/70">
+                Your Next Look Starts Here
+              </span>
+
+              <h2 className="mt-4 font-['Bebas_Neue'] text-5xl uppercase leading-none tracking-wide text-[#0b0b0b] sm:text-6xl md:text-7xl">
+                READY FOR A<span className="block">FRESH CUT?</span>
+              </h2>
+
+              <p className="mt-6 max-w-2xl text-base leading-7 text-[#0b0b0b]/70 md:text-lg">
+                Choose your service, select your preferred barber and find a
+                time that works for you. Your next Black & Blade experience is
+                just a few clicks away.
+              </p>
+            </div>
+
+            {/* CTA Button */}
+            <div className="shrink-0">
+              <Link
+                to="/booking"
+                className="group inline-flex items-center gap-4 bg-[#0b0b0b] px-8 py-5 text-sm font-bold uppercase tracking-[0.15em] text-[#f5f1e8] transition-all duration-300 hover:bg-[#141414] hover:px-10"
+              >
+                <FiCalendar size={21} />
+
+                <span>Book Your Appointment</span>
+
+                <FiArrowRight
+                  size={20}
+                  className="transition-transform duration-300 group-hover:translate-x-1"
+                />
+              </Link>
+            </div>
+          </div>
+
+          {/* Bottom Information */}
+          <div className="mt-12 grid border-t border-[#0b0b0b]/20 pt-8 sm:grid-cols-3">
+            <div className="flex items-center justify-center gap-3 border-b border-[#0b0b0b]/20 pb-5 sm:justify-start sm:border-b-0 sm:border-r sm:pb-0">
+              <FiCalendar size={19} className="text-[#0b0b0b]" />
+
+              <span className="text-sm font-medium text-[#0b0b0b]/70">
+                Easy Online Booking
+              </span>
+            </div>
+
+            <div className="flex items-center justify-center gap-3 border-b border-[#0b0b0b]/20 py-5 sm:border-b-0 sm:border-r sm:py-0">
+              <FiClock size={19} className="text-[#0b0b0b]" />
+
+              <span className="text-sm font-medium text-[#0b0b0b]/70">
+                Flexible Appointment Times
+              </span>
+            </div>
+
+            <div className="flex items-center justify-center gap-3 pt-5 sm:justify-end sm:pt-0">
+              <FiMapPin size={19} className="text-[#0b0b0b]" />
+
+              <span className="text-sm font-medium text-[#0b0b0b]/70">
+                Bloemfontein, Free State
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+      
     </main>
   );
 };
