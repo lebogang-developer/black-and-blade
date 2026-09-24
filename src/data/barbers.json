@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Marcus Peterson",
+    "role": "Master Barber",
+    "specialty": "Fades & Precision Cuts",
+    "experience": "8+ Years Experience",
+    "image": "/images/barbers/marcus.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Liam Mokoena",
+    "role": "Senior Barber",
+    "specialty": "Classic Cuts & Beard Grooming",
+    "experience": "6+ Years Experience",
+    "image": "/images/barbers/liam.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Thabo Nkosi",
+    "role": "Barber & Stylist",
+    "specialty": "Modern Styles & Creative Cuts",
+    "experience": "5+ Years Experience",
+    "image": "/images/barbers/thabo.jpg"
+  }
+]

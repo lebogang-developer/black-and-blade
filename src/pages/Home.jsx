@@ -14,6 +14,7 @@ import {
 } from "react-icons/fi";
 
 import services from "../data/services.json";
+import barbers from "../data/barbers.json";
 
 const Home = () => {
   return (
@@ -435,6 +436,112 @@ const Home = () => {
               <FiClock className="text-[#b89b5e]" size={18} />
               <span>Appointments available throughout the week</span>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ==================== MEET THE TEAM ==================== */}
+      <section className="bg-[#f5f1e8] px-6 py-20 md:px-10 lg:px-16 lg:py-28">
+        <div className="mx-auto max-w-7xl">
+          {/* Section Header */}
+          <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+            <div className="max-w-2xl">
+              <span className="text-sm font-semibold uppercase tracking-[0.3em] text-[#b89b5e]">
+                Meet The Team
+              </span>
+
+              <h2 className="mt-4 font-['Bebas_Neue'] text-4xl uppercase leading-tight tracking-wide text-[#0b0b0b] sm:text-5xl md:text-6xl">
+                THE PEOPLE BEHIND
+                <span className="block text-[#b89b5e]">THE BLADE.</span>
+              </h2>
+
+              <p className="mt-6 max-w-xl text-base leading-7 text-[#777777] md:text-lg">
+                Skilled hands. Sharp eyes. A passion for the craft. Meet the
+                barbers who bring the Black & Blade experience to life.
+              </p>
+            </div>
+
+            <Link
+              to="/about"
+              className="group inline-flex w-fit items-center gap-3 border-b border-[#0b0b0b] pb-2 text-sm font-semibold uppercase tracking-wider text-[#0b0b0b] transition-colors duration-300 hover:border-[#b89b5e] hover:text-[#b89b5e]"
+            >
+              Meet The Full Team
+              <FiArrowRight
+                size={18}
+                className="transition-transform duration-300 group-hover:translate-x-1"
+              />
+            </Link>
+          </div>
+
+          {/* Barber Cards */}
+          <div className="mt-14 grid gap-8 md:grid-cols-3">
+            {barbers.map((barber) => (
+              <div key={barber.id} className="group">
+                {/* Image */}
+                <div className="relative aspect-[4/5] overflow-hidden bg-[#141414]">
+                  <img
+                    src={barber.image}
+                    alt={`${barber.name} - ${barber.role}`}
+                    className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+
+                  {/* Image Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0b0b0b]/90 via-transparent to-transparent opacity-80" />
+
+                  {/* Experience Badge */}
+                  <div className="absolute left-5 top-5 bg-[#b89b5e] px-4 py-2 text-xs font-bold uppercase tracking-wider text-[#0b0b0b]">
+                    {barber.experience}
+                  </div>
+
+                  {/* Specialty */}
+                  <div className="absolute bottom-5 left-5 right-5">
+                    <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#d4bc86]">
+                      {barber.specialty}
+                    </span>
+                  </div>
+                </div>
+
+                {/* Barber Information */}
+                <div className="border-b border-[#d6d0c3] pb-6 pt-6">
+                  <div className="flex items-start justify-between gap-4">
+                    <div>
+                      <h3 className="font-['Bebas_Neue'] text-3xl tracking-wide text-[#0b0b0b]">
+                        {barber.name}
+                      </h3>
+
+                      <p className="mt-1 text-sm font-medium uppercase tracking-wider text-[#b89b5e]">
+                        {barber.role}
+                      </p>
+                    </div>
+
+                    <div className="flex h-10 w-10 shrink-0 items-center justify-center border border-[#d6d0c3] text-[#0b0b0b] transition-all duration-300 group-hover:border-[#b89b5e] group-hover:bg-[#b89b5e]">
+                      <FiScissors size={17} />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Bottom CTA */}
+          <div className="mt-14 flex flex-col items-center justify-between gap-6 border-t border-[#d6d0c3] pt-8 text-center sm:flex-row sm:text-left">
+            <div>
+              <p className="font-['Bebas_Neue'] text-2xl tracking-wide text-[#0b0b0b]">
+                READY FOR YOUR NEXT CUT?
+              </p>
+
+              <p className="mt-1 text-sm text-[#777777]">
+                Choose your barber and book your appointment.
+              </p>
+            </div>
+
+            <Link
+              to="/booking"
+              className="inline-flex items-center gap-3 bg-[#0b0b0b] px-7 py-4 text-sm font-semibold uppercase tracking-wider text-[#f5f1e8] transition-all duration-300 hover:bg-[#b89b5e] hover:text-[#0b0b0b]"
+            >
+              <FiCalendar size={18} />
+              Book An Appointment
+            </Link>
           </div>
         </div>
       </section>
