@@ -120,7 +120,7 @@ const Contact = () => {
 
     // Later we can send this data to an API,
     // EmailJS, Formspree or our own backend.
-    console.log("Contact form submitted:", formData);
+    // console.log("Contact form submitted:", formData);
 
     setErrors({});
     setIsSubmitted(true);
@@ -338,7 +338,7 @@ const Contact = () => {
 
             <div className="flex gap-3">
               <a
-                href="#"
+                href="https://www.instagram.com/"
                 aria-label="Black & Blade Instagram"
                 className="flex h-11 w-11 items-center justify-center border border-[#c8c1b4] text-[#0b0b0b] transition-all duration-300 hover:border-[#b89b5e] hover:bg-[#b89b5e]"
               >
@@ -346,7 +346,7 @@ const Contact = () => {
               </a>
 
               <a
-                href="#"
+                href="https://www.facebook.com/"
                 aria-label="Black & Blade Facebook"
                 className="flex h-11 w-11 items-center justify-center border border-[#c8c1b4] text-[#0b0b0b] transition-all duration-300 hover:border-[#b89b5e] hover:bg-[#b89b5e]"
               >

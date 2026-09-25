@@ -284,7 +284,7 @@ const Booking = () => {
       customer: customerDetails,
     };
 
-    console.log("Booking confirmed:", booking);
+    // console.log("Booking confirmed:", booking);
 
     setBookingConfirmed(true);
 

@@ -35,7 +35,7 @@ const Footer = () => {
             {/* Social Links */}
             <div className="mt-6 flex items-center gap-3">
               <a
-                href="#"
+                href="https://www.instagram.com/"
                 aria-label="Instagram"
                 className="flex h-10 w-10 items-center justify-center border border-white/10 text-[#F5F1E8] transition-colors duration-300 hover:border-[#B89B5E] hover:text-[#B89B5E]"
               >
@@ -43,7 +43,7 @@ const Footer = () => {
               </a>
 
               <a
-                href="#"
+                href="https://www.facebook.com/"
                 aria-label="Facebook"
                 className="flex h-10 w-10 items-center justify-center border border-white/10 text-[#F5F1E8] transition-colors duration-300 hover:border-[#B89B5E] hover:text-[#B89B5E]"
               >
@@ -51,7 +51,7 @@ const Footer = () => {
               </a>
 
               <a
-                href="#"
+                href="https://wa.me/27511234567"
                 aria-label="WhatsApp"
                 className="flex h-10 w-10 items-center justify-center border border-white/10 text-[#F5F1E8] transition-colors duration-300 hover:border-[#B89B5E] hover:text-[#B89B5E]"
               >
