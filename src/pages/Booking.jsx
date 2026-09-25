@@ -1059,6 +1059,26 @@ const Booking = () => {
                       </p>
                     )}
                   </div>
+
+                  <p className="mt-6 text-xs leading-5 text-[#777777]">
+                    By continuing, you acknowledge our{" "}
+                    <Link
+                      to="/terms"
+                      target="_blank"
+                      className="font-semibold text-[#b89b5e] hover:underline"
+                    >
+                      Terms & Conditions
+                    </Link>{" "}
+                    and{" "}
+                    <Link
+                      to="/privacy"
+                      target="_blank"
+                      className="font-semibold text-[#b89b5e] hover:underline"
+                    >
+                      Privacy Policy
+                    </Link>
+                    .
+                  </p>
                 </div>
               </div>
             )}
