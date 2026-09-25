@@ -494,6 +494,115 @@ const About = () => {
           </div>
         </div>
       </section>
+
+      {/* ==================== FINAL CTA ==================== */}
+      <section className="relative overflow-hidden bg-[#0b0b0b] px-6 py-20 md:px-10 lg:px-16 lg:py-28">
+        {/* Decorative Background */}
+        <div className="absolute inset-0">
+          <div className="absolute -right-32 -top-32 h-96 w-96 rounded-full bg-[#b89b5e]/5 blur-3xl" />
+          <div className="absolute -bottom-40 -left-32 h-96 w-96 rounded-full bg-[#b89b5e]/5 blur-3xl" />
+        </div>
+
+        <div className="relative z-10 mx-auto max-w-7xl">
+          <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
+            {/* Left Content */}
+            <div>
+              <div className="mb-5 flex items-center gap-3">
+                <span className="h-px w-10 bg-[#b89b5e]" />
+                <span className="text-sm font-semibold uppercase tracking-[0.3em] text-[#b89b5e]">
+                  Your Next Cut
+                </span>
+              </div>
+
+              <h2 className="font-['Bebas_Neue'] text-5xl uppercase leading-[0.95] tracking-wide text-[#f5f1e8] sm:text-6xl md:text-7xl">
+                READY TO FIND
+                <span className="block text-[#b89b5e]">YOUR STYLE?</span>
+              </h2>
+
+              <p className="mt-6 max-w-xl text-base leading-7 text-[#777777] md:text-lg md:leading-8">
+                Explore our range of professional grooming services or reserve
+                your chair with one of the Black & Blade barbers. Your next look
+                starts here.
+              </p>
+
+              {/* Buttons */}
+              <div className="mt-9 flex flex-col gap-4 sm:flex-row">
+                <Link
+                  to="/booking"
+                  className="group inline-flex items-center justify-center gap-3 bg-[#b89b5e] px-7 py-4 text-sm font-bold uppercase tracking-wider text-[#0b0b0b] transition-all duration-300 hover:bg-[#d4bc86]"
+                >
+                  <FiCalendar size={18} />
+                  Book Appointment
+                  <FiArrowRight
+                    size={18}
+                    className="transition-transform duration-300 group-hover:translate-x-1"
+                  />
+                </Link>
+
+                <Link
+                  to="/services"
+                  className="group inline-flex items-center justify-center gap-3 border border-[#f5f1e8]/25 px-7 py-4 text-sm font-semibold uppercase tracking-wider text-[#f5f1e8] transition-all duration-300 hover:border-[#b89b5e] hover:text-[#d4bc86]"
+                >
+                  View Services
+                  <FiArrowRight
+                    size={18}
+                    className="transition-transform duration-300 group-hover:translate-x-1"
+                  />
+                </Link>
+              </div>
+            </div>
+
+            {/* Right Side */}
+            <div className="lg:flex lg:justify-end">
+              <div className="w-full border border-[#292929] bg-[#141414] p-7 sm:p-9 lg:max-w-md">
+                <span className="font-['Bebas_Neue'] text-6xl leading-none text-[#b89b5e]">
+                  B&B
+                </span>
+
+                <h3 className="mt-5 font-['Bebas_Neue'] text-3xl uppercase tracking-wide text-[#f5f1e8]">
+                  Precision Cuts.
+                  <span className="block text-[#b89b5e]">Modern Style.</span>
+                </h3>
+
+                <div className="my-6 h-px bg-[#292929]" />
+
+                <div className="space-y-4">
+                  <div className="flex items-center justify-between gap-5">
+                    <span className="text-sm text-[#777777]">Location</span>
+
+                    <span className="text-right text-sm font-medium text-[#f5f1e8]">
+                      Bloemfontein, Free State
+                    </span>
+                  </div>
+
+                  <div className="flex items-center justify-between gap-5">
+                    <span className="text-sm text-[#777777]">Mon – Fri</span>
+
+                    <span className="text-sm font-medium text-[#f5f1e8]">
+                      09:00 – 18:00
+                    </span>
+                  </div>
+
+                  <div className="flex items-center justify-between gap-5">
+                    <span className="text-sm text-[#777777]">Saturday</span>
+
+                    <span className="text-sm font-medium text-[#f5f1e8]">
+                      08:00 – 16:00
+                    </span>
+                  </div>
+                </div>
+
+                <div className="mt-7 border-l-2 border-[#b89b5e] pl-4">
+                  <p className="text-sm leading-6 text-[#777777]">
+                    Choose your service, select your barber and reserve a time
+                    that works for you.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   );
 };
