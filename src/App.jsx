@@ -6,6 +6,7 @@ import About from "./pages/About";
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 import Booking from "./pages/Booking";
+import BookingPopup from "./components/BookingPopup";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       </Routes>
       
       <Footer />
+      <BookingPopup />
     </>
   );
 }
