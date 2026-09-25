@@ -5,7 +5,8 @@
     "role": "Master Barber",
     "specialty": "Fades & Precision Cuts",
     "experience": "8+ Years Experience",
-    "image": "/images/barbers/marcus.jpg"
+    "image": "/images/barbers/marcus.jpg",
+    "bio": "Marcus is known for his precision fades and attention to detail. With years of experience behind the chair, he combines classic barbering techniques with modern styles to create sharp, confident looks."
   },
   {
     "id": 2,
@@ -13,7 +14,8 @@
     "role": "Senior Barber",
     "specialty": "Classic Cuts & Beard Grooming",
     "experience": "6+ Years Experience",
-    "image": "/images/barbers/liam.jpg"
+    "image": "/images/barbers/liam.jpg",
+    "bio": "Liam specialises in timeless cuts and detailed beard grooming. His approach is relaxed and consultative, making sure every client leaves with a style that feels natural and personal."
   },
   {
     "id": 3,
@@ -21,6 +23,7 @@
     "role": "Barber & Stylist",
     "specialty": "Modern Styles & Creative Cuts",
     "experience": "5+ Years Experience",
-    "image": "/images/barbers/thabo.jpg"
+    "image": "/images/barbers/thabo.jpg",
+    "bio": "Thabo brings a creative edge to the Black & Blade team. He enjoys working with modern styles, textured cuts and contemporary looks while keeping every finish clean and intentional."
   }
 ]

@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
+import About from "./pages/About";
 
 function App() {
   return (
@@ -18,14 +19,7 @@ function App() {
             </div>
           }
         />
-        <Route
-          path="/about"
-          element={
-            <div className="min-h-screen bg-[#0B0B0B] p-10 text-[#F5F1E8]">
-              <h1 className="font-['Bebas_Neue'] text-5xl">ABOUT</h1>
-            </div>
-          }
-        />
+         <Route path="/about" element={<About />} />
 
         <Route
           path="/contact"
